@@ -1,0 +1,26 @@
+@use "@/styles/abstracts";
+.scrollbar {
+  position: fixed;
+  height: 100%;
+  width: auto;
+
+  padding-block: 4px; 
+  display: flex;
+  flex-flow: column;
+
+  top: 0;
+  right: var(--position-right);
+
+  .inner {
+    flex: 1;
+    height: 100%;
+    width: 6px;
+  }
+
+  .thumb {
+    position: relative;
+    background-color: abstracts.$infinitus-green;
+    min-height: var(--min-height);
+    border-radius: var(--border-radius);
+  }
+}

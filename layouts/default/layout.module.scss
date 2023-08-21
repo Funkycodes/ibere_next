@@ -1,0 +1,24 @@
+@use "@/styles/shared";
+@use "@/styles/abstracts";
+.layout {
+  @extend %container;
+  .header {
+    .nav {
+      ul {
+        @extend %flex-ac;
+        gap: 3rem;
+
+        li {
+          a {
+            @extend %link;
+          }
+        }
+      }
+    }
+  }
+
+  .child {
+    min-height: 100vh;
+    @extend %container;
+  }
+}

@@ -1,0 +1,12 @@
+@use "./abstracts";
+
+.home {
+  padding-top: 5rem;
+  height: 500vh;
+
+  button {
+    border: 1px solid currentColor;
+    border-radius: 0.2em;
+    padding: 4px;
+  }
+}

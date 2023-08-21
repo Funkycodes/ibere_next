@@ -1,0 +1,30 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  overflow-y: hidden;
+  position: relative;
+
+  .inner {
+    transform: translateY(0);
+    transition: transform 0.3s var(--ease-in-bounce);
+  }
+
+  .animated {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  a,
+  button {
+    &:hover {
+      .link {
+        .inner {
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+}
