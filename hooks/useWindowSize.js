@@ -13,7 +13,7 @@ export default function useWindowSize() {
   useEvent("resize", handleResize);
 
   useIsomorphicEffect(() => {
-    // Define only once, not on every render
+    // Call first time, not on every render
     handleResize();
   }, []);
 
